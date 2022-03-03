@@ -75,6 +75,10 @@ cc_defaults {
         "-Wno-inline-asm",
     ],
     export_include_dirs: ["."],
+
+    lto: {
+        never: true,
+    }
 }
 
 cc_library_shared {
